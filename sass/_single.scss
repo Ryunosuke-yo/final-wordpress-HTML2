@@ -1,0 +1,81 @@
+.single-wrap {
+    position: relative;
+    background-color: black;
+    z-index: 2;
+    height: 100vh;
+
+
+    .single-img {
+        @include deer-pic();
+    }
+    .single-title {
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 2rem;
+    }
+
+    .single-content {
+        line-height: 1.5rem;
+        font-size: 1rem;
+        // padding: 1rem;
+        background-color: $purple;
+        height: 40vh;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+        padding: 3rem;
+        width: 70%;
+        margin-top: 2rem;
+
+
+        @include large(){
+            
+            width: 50%;
+           
+        }
+        
+        
+        p {
+            
+            padding: 1rem;
+            width: 90%;
+           margin: auto;
+        }
+    }
+
+    // .single-date {
+    //     font-size: 1.5rem;
+    // }
+    div, p {
+        color: white;
+    }
+
+   a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .a-wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 15vh;
+        margin-top: 2rem;
+        background-color: $black-trans;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+    }
+}
+
+#single-type{
+    display: none;
+}
+
+// .typed-cursor {
+//     color: black;
+//     background-color: black;
+// }
+

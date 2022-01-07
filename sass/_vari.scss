@@ -1,0 +1,45 @@
+$black-trans : rgba(34, 34, 34, 0.7);
+$black-back : rgb(26, 26, 26);
+$purple : rgb(135, 91, 206);
+
+@mixin neu() {
+    color: white;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #8e61dc, #7852b9);
+    box-shadow:  25px 25px 50px #4d3577,
+    -10px -10px 10px #bd81ff;
+}
+
+@mixin deer-pic{
+  position: absolute;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        object-fit: cover;
+        height: 100vh;
+        opacity: 0.5;
+    
+}
+
+//media query
+$large: 900px; 
+$medium: 680px; 
+$small: 480px;  
+
+@mixin small {
+    @media (min-width: ($small)) {
+      @content;
+    }
+  }
+  @mixin medium {
+    @media (min-width: ($medium)) {
+      @content;
+    }
+  }
+  @mixin large {
+    @media (min-width: ($large)) {
+      @content;
+    }
+  }
+
+

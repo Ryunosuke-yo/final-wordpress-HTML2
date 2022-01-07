@@ -1,0 +1,228 @@
+.img-wrap {
+    position: relative;
+    // height: 100vh;
+    
+    .tree {
+       
+    }
+    
+    .back{
+        
+    }
+
+    .train {
+        left: 3rem;
+        // width: 80%;
+        // object-fit: contain;
+    }
+    img {
+        width: 100%;
+        object-fit: cover;
+        min-height: 100vh;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
+}
+
+.topic {
+    text-align: center;
+    top:7rem;
+    position: absolute;
+    font-weight: bolder;
+    left: 40%;
+    
+    .hello{
+        font-size: 5.3rem;
+        color: white;
+      
+    }
+}
+
+.intro{
+    text-align: center;
+    top:20rem;
+    position: absolute;
+    font-weight: bolder;
+    width: 100%;
+
+    p{
+        font-size: 1.3rem;
+        color: white;
+        font-weight: lighter;
+        margin-bottom: 2rem;
+      
+    }
+}
+
+.black-con{
+    background-color: $black-back;
+    position: absolute;
+    min-height: 160vh;
+    width: 100%;
+    top: 848px;
+    z-index: 4;
+}
+
+.stuPro {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.bio-box{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -9;
+}
+
+.bio-box{
+    background-color: transparent;
+         padding-top: 2rem;
+         height: 50vh;
+        transform: translateX(-1000px) ;
+}
+
+
+
+.bio-box-active {
+    transform: translateX(0);
+    width:100%; 
+    height:100%;
+    
+/* border:1px solid black; */
+   background-color:$purple;
+   transition: all ease 1s;
+}
+
+
+.bio {
+        background-color: transparent;
+        padding-top: 2rem;
+        height: 50vh;
+        position: relative;
+
+
+
+    p,h2{
+        color: white;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    p {
+        border: 1px white solid;
+        line-height: 2rem;
+        padding: 4rem;
+    }
+
+    .bio-grid{
+        padding: 1.5rem;
+        height: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        p:nth-of-type(1){
+            border-left: none;
+            border-bottom: none;
+            
+        }
+
+        p:nth-of-type(2){
+            border-right: none;
+            border-left: none;
+            border-bottom:none ;
+            
+            
+        }
+
+        p:nth-of-type(3){
+            grid-column: 1/3;
+            border-right: none;
+            border-left: none;
+            border-bottom:none;
+            padding: 3rem;
+        }
+    }
+
+    }
+
+    .skills{
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-top: 3rem;
+        h2 {
+            color: white;
+            font-size: 1.5rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .skill-wrapper {
+            background-color: $purple;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-radius: 20px;
+
+            @include large(){
+                
+                width: 50%;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            
+            p {
+                @include neu();
+                padding: 2rem;
+                margin: 2rem;
+                text-align: center;
+                font-size: 1.5rem;
+
+                @include medium(){
+                margin: 4rem;
+                }
+
+                @include large(){
+                    margin: 5rem;
+                    width: 50%;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+            }
+    
+        }
+    }
+
+    .contact-wrapper {
+        text-align: center;
+
+        p {
+            color: white;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .icon-wrapper {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 2rem;
+
+            i{
+                color: $purple;
+                font-size: 3.5rem;
+            }
+        }
+    }
+
+    
